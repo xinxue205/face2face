@@ -25,7 +25,7 @@ public class ClientHandler extends SimpleChannelInboundHandler<Message> {
     boolean _verify = false;
     private static int count = 0;
 
-    public static AtomicLong increased = new AtomicLong(1);
+    public static AtomicLong increased = new AtomicLong(Client.USER_ID);
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws IOException {
